@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#f1f5f8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="150dp"
+            android:weightSum="4">
+            <RelativeLayout
+                android:id="@+id/Goto_notice_activity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/admin_uploadNotice"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/images" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:id="@+id/inceView"
+                    android:layout_below="@id/admin_uploadNotice"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/inceView"
+                    android:id="@+id/uploadNotice_text"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Upload Notice"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:id="@+id/gallery_view"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/admin_gallery"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/gallery" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:id="@+id/alarmview"
+                    android:layout_below="@id/admin_gallery"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/admin_gallery_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gallery"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/alarmview"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:weightSum="4">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/admin_faculty_info"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/faculty" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:id="@+id/fireprotectionview"
+                    android:layout_below="@id/admin_faculty_info"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/admin_faculty_info_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Faculty Info"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/fireprotectionview"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/admin_delete"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/delete" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:id="@+id/gasview"
+                    android:layout_below="@id/admin_delete"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:text="Delete Notice"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/gasview"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:weightSum="4">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:id="@+id/pdf_relativeLayout"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/admin_pdf"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/faculty" />
+
+                <View
+                    android:id="@+id/pdfVew"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@id/admin_pdf"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:id="@+id/pdf_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ebook"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/pdfVew"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

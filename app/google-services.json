@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "306835535745",
+    "project_id": "collageadminapps",
+    "storage_bucket": "collageadminapps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306835535745:android:c8dc9749f2aa3aac6dda80",
+        "android_client_info": {
+          "package_name": "com.example.collageadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306835535745-1s5ud1ivf44tjq0097h3oepev3d7okbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_0JQzy2xfmWuEdx-pGrVFU8XnuC7Cd_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306835535745-1s5ud1ivf44tjq0097h3oepev3d7okbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

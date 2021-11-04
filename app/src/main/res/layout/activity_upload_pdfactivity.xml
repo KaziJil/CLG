@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoticeActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/selectPDF"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:layout_below="@id/selectPDF"
+        android:id="@+id/pdfNameTextView"/>
+
+    <EditText
+        android:id="@+id/setTitlePDF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectPDF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Title" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/PDF_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setTitlePDF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="Upload" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/PDF_button"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/pdfImageView"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pdf_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pdfImageView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="Preview" />
+
+    <TextView
+        android:id="@+id/pageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pdfImageView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/pdf_preview"
+        android:text="0/0"
+        android:textSize="30dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pdf_nextPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pdfImageView"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/pageNumber"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="Preview" />
+
+
+
+</RelativeLayout>

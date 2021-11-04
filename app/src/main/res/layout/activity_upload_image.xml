@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadImage">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pick_image_for_upload_image"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Spinner
+        android:id="@+id/spinner_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/pick_image_for_upload_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:gravity="center"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/title_for_upload_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_view"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Title" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/upload_activity_upload_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_for_upload_activity"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="Upload" />
+
+    <ImageView
+        android:id="@+id/image_view_upload_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/upload_activity_upload_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>
